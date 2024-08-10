@@ -37,17 +37,17 @@ const Navbar = () => {
             CONTACT
           </Link>
         </nav>
-        <button className="hidden md:block bg-gradient-to-r from-[#2b5c17] to-[#ad8c19] text-white px-4 py-2 rounded-full ml-4">
+        <Link href="/contact" className="hidden md:block bg-gradient-to-r from-[#2b5c17] to-[#ad8c19] text-white px-4 py-2 rounded-full ml-4">
           Get in Touch
-        </button>
+        </Link>
         <div className="md:hidden flex items-center w-20 h-20">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
-            ☰
+            {menuOpen ? '✖' : '☰'} {/* Menu open icon switches based on the state */}
           </button>
         </div>
       </div>
       {menuOpen && (
-        <div className="md:hidden bg-white shadow-md absolute top-full left-0 right-0 py-2">
+        <div className="md:hidden bg-white shadow-md absolute top-30 right-20 py-2 w-40">
           <nav className="flex flex-col space-y-4 px-4">
             <Link href="/" className="text-gray-700 border-b-2 border-transparent hover:border-gray-900">
               Home
@@ -65,9 +65,9 @@ const Navbar = () => {
             <Link href="/contact" className="text-gray-700 border-b-2 border-transparent hover:border-gray-900">
               Contact
             </Link>
-            <button className="bg-gradient-to-r from-[#2b5c17] to-[#ad8c19] text-white px-4 py-2 rounded-lg">
+            <Link href="/contact" className="bg-gradient-to-r from-[#2b5c17] to-[#ad8c19] text-white px-4 py-2 rounded-lg">
               Get in Touch
-            </button>
+            </Link>
           </nav>
         </div>
       )}
