@@ -16,7 +16,7 @@ const Card = () => {
   ];
 
   return (
-    <div className="w-full grid grid-cols-5 mt-10">
+    <div className="w-full grid grid-cols-1 lg:grid-cols-5 mt-10">
       {images.map((image, index) => (
         <div key={index} className="relative group h-80">
           <Image
