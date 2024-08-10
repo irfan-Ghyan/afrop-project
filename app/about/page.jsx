@@ -18,20 +18,18 @@ const page = () => {
         {/* <div className='flex justify-center items-center my-[60px]'>
             <Image src={afro} alt='bannar' width={600} height={350}/>
         </div> */}
-        <div className="flex gap-8 justify-between">
-        <div className='w-1/2\3'>
+        <div className=" lg:flex xl:flex gap-8 justify-between">
+        <div className='md:w2/3 lg:w-2\3 '>
         <Image src={ceo} alt='bannar' width={400} height={350}/>
         </div>
-        <div className="w-2/3 flex flex-col bg-transparent my-20 px-4">
-          <h2 className="font-black text-6xl mb-4">{data.title}</h2>
+        <div className="md:w2/3 lg:w-2\3 flex bg-transparent my-20 px-4">
+          <h2 className="font-black text-4xl lg:text-6xl mb-4">{data.title}</h2>
           <p className="text-gray-700 text-[14px] font-light mb-4 text-balance">{data.description}</p>
           <Link href="" className="w-[200px] my-[20px] border-2 border-[#ad8c19] text-gray-700 text-[14px] py-4 px-4 rounded-full font-normal hover:bg-gradient-to-r hover:from-[#2b5c17] hover:to-[#ad8c19] hover:text-white">
             {data.buttonText}
           </Link>
         </div>
-       
         </div>
-        
     </div>
     <ContactForm />
     </>
