@@ -42,8 +42,8 @@ const SliderComponent = () => {
             <Image src={slide.src} alt={`Slide ${index + 1}`} layout="fill" objectFit="cover" />
             <div className=" absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
               <div className='container mx-auto px-4'>
-                <span className="text-white text-2xl font-thin py-6 bg-[#ad8c19] px-4 bg-opacity-50">{slide.title}</span>
-                <div className='mt-12'><span className="text-white text-2xl text-balance font-block py-6  bg-[#ad8c19] px-4 bg-opacity-50">{slide.description}</span></div>
+                <span className="text-white text-2xl font-thin py-2 bg-[#ad8c19] lg:px-4 bg-opacity-50 ">{slide.title}</span>
+                <div className='mt-12'><span className="text-white text-2xl lg:text-balance font-thin py-2 bg-[#ad8c19] px-4 bg-opacity-50">{slide.description}</span></div>
               </div>
             </div>
           </div>
