@@ -40,7 +40,7 @@ const Navbar = () => {
         <button className="hidden md:block bg-gradient-to-r from-[#2b5c17] to-[#ad8c19] text-white px-4 py-2 rounded-full ml-4">
           Get in Touch
         </button>
-        <div className="md:hidden flex items-center">
+        <div className="md:hidden flex items-center w-20 h-20">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
             ☰
           </button>
