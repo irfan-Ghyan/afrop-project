@@ -40,14 +40,14 @@ const Navbar = () => {
         <Link href="/contact" className="hidden md:block bg-gradient-to-r from-[#2b5c17] to-[#ad8c19] text-white px-4 py-2 rounded-full ml-4">
           Get in Touch
         </Link>
-        <div className="md:hidden flex items-center w-20 h-20">
+        <div className="md:hidden flex w-6 h-6">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
-            {menuOpen ? '✖' : '☰'} {/* Menu open icon switches based on the state */}
+            {menuOpen ? '✖' : '☰'} 
           </button>
         </div>
       </div>
       {menuOpen && (
-        <div className="md:hidden bg-white shadow-md absolute top-30 right-20 py-2 w-40">
+        <div className="md:hidden bg-white shadow-md absolute top-20 right-5 py-2 w-40">
           <nav className="flex flex-col space-y-4 px-4">
             <Link href="/" className="text-gray-700 border-b-2 border-transparent hover:border-gray-900">
               Home

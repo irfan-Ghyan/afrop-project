@@ -13,7 +13,7 @@ const Aboutus = ({ title, description, buttonText, imageSrc, imageAlt, heading, 
         <div className="w-full lg:w-1/2 flex flex-col bg-transparent p-6">
           <h2 className="font-black text-4xl lg:text-6xl text-[#ad8c19] mb-4">{title}</h2>
           <p className="text-gray-700 text-4xl font-thin mb-4 text-balance">{description}</p>
-          <Link href="/about" className="w-[200px] my-[20px] border-2 border-[#ad8c19] text-gray-700 text-[14px] py-4 px-4 rounded-full font-normal hover:bg-gradient-to-r hover:from-[#2b5c17] hover:to-[#ad8c19] hover:text-white">
+          <Link href="/about" className="w-[200px] my-[20px] border-2 border-[#ad8c19] text-gray-700 text-[14px] text-center py-4 px-4 rounded-full font-normal hover:bg-gradient-to-r hover:from-[#2b5c17] hover:to-[#ad8c19] hover:text-white">
             {buttonText}
           </Link>
         </div>

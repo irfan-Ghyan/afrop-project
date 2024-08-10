@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 const slides = [
   { src: '/images/slide.jpg', title: 'AFROHARVEST FOODSTUFF LLC', description: 'EXPORTER OF HIGH-QUALITY SUDANESE ORIGIN COMMODITIES AND CROPS' },
   { src: '/images/slide1.jpg', title: 'AFROHARVEST FOODSTUFF', description: 'EXPORTER OF HIGH-QUALITY SUDANESE ORIGIN COMMODITIES AND CROPS' },
-  { src: '/images/slide2.jpg', title: 'AFROHARVEST ', description: 'EXPORTER OF HIGH-QUALITY SUDANESE ' },
+  { src: '/images/slide2.jpg', title: 'AFROHARVEST ', description: ' we lead by innovation and consistently deliver excellence across the spectrum of our diversified services? ' },
 ];
 
 const SliderComponent = () => {

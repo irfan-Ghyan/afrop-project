@@ -14,7 +14,7 @@ export default function Home() {
     buttonText: 'MORE ABOUT',
     imageSrc: '/images/ceo.png',
     imageAlt: 'Example Image',
-    heading: 'COHESIVE COMMUNITY FOR COMMODITY',
+    heading: 'WHY CHOOSING AFROHARVEST?',
     paragraph:'Welcome to Afroharvest, where excellence meets nourishment. As a leading enterprise in the heart of Sudan, we take immense pride in our role as specialists in the export of high-quality Sudanese origin commodities and crops. Our commitment to quality, sustainability, and innovation sets us apart in the agricultural and food production industry',};
 
   const items = [
