@@ -9,7 +9,7 @@ const FeatureSection = () => {
   return (
     <div className="relative container mx-auto px-4">
       <div className="text-center p-8">
-        <h1 className="text-4xl font-bold text-gray-800">{title}</h1>
+        <h1 className="text-2xl lg:text-4xl font-bold text-gray-800 text-balance ">{title}</h1>
         <p className="mt-4 text-xl text-gray-600">{description}</p>
       </div>
       <div className="w-full">
