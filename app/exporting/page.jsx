@@ -14,7 +14,7 @@ import pigeonPeas from '../../public/images/img9.jpg';
 
 const page = () => {
   const data = {
-    title: 'Products',
+    title: 'Exporting Products',
     description: 'In 2016, our group established its Commodities Exporting Division. We take pride in sourcing the finest agricultural products directly from the fertile fields of Sudan. Our commitment to quality assurance begins at the roots, ensuring that each crop is cultivated with precision and care. We pride ourselves on our swift export services, ensuring minimal lead time to deliver our premium products to any destination. We meticulously handle every aspect of the export process, from harvesting to packaging, to deliver the authenticity and excellence our clients expect. What sets us apart is our unwavering commitment to adhering to each country’s importing regulations, guaranteeing a smooth and compliant delivery process. At present, we serve a wide client base from different countries such as China, India, Turkey, Algeria, Yemen, etc.',
   };
 
