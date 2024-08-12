@@ -10,31 +10,28 @@ const items = [
     {
         logo: '/images/logo.png',
         title: 'Sudan Office',
-        description: 'Bahri Industrial Area Khartoum North, Khartoum, Sudan',
+        description: 'Bahri Industrial Area Khartoum - Sudan, AL-Aghareeg Neighborhood, Posrtsudan-Sudan',
         email:'info@alfabrigaafrican.com',
-        phone:'+971502194669'
+        phone:'+249912324300 / +249118387933',
+        website:'www.alfabrigaafrican.com'
     },
     {
         logo: '/images/logo.png',
         title: 'Dubai Office ',
         description: 'Burjuman Business Tower, office 908, Dubai,UAE',
-        email:'info@afroharvestfoods.com ',
-        phone:'+971501801570'
+        email:'info@afroharvestfoods.com',
+        phone:'+971501801570',
+        website:'www.alfabrigaafrican.com'
     },
     {
         logo: '/images/logo.png',
         title: 'India Office',
-        description: 'head office ahmedabad 919, Fortune Businees hub, science city road, near shell petrol pump, sola Ahmedabad-380060,Gujrat(india)',
-         email:'info@alfabrigaafrican.com',
-        phone:'+971502194669'
+        description: 'C-15 Bhagwati Sadan, Tonk Road, Jaipur - 302015 India',
+         email:'',
+        phone:'+919829032232',
+        website:''
     },
-    {
-        logo: '/images/logo.png',
-        title: 'Egpyt Office',
-        description: 'jumeirah lake tower(Jlt), cluster - c building name: palladium office no: 708,7th floor, p o box : 241755, dubai - U.A.E.',
-        email:'info@alfabrigaafrican.com',
-        phone:'+971502194669'
-    },
+
 ];
 
 const Footer = () => {

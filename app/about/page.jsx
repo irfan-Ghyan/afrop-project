@@ -3,7 +3,7 @@ import React from 'react';
 import ceo from '../../public/images/ceo.png';
 import ContactForm from '../components/contactform/ContactForm';
 import Image from 'next/image';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 const page = () => {
   const data = {
