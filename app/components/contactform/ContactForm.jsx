@@ -28,7 +28,7 @@ const ContactForm = () => {
       <div className="w-full mx-auto ">
         <div className='max-w-4xl mx-auto p-8'>
         <h2 className="text-4xl font-bold mb-4 text-center text-white">Get in touch</h2>
-        <p className="mb-8 text-center text-gray-200 text-opacity-25">To know more about how we operate and how should we go forward, ring us up on +91 99250 44966 or mail us on info@kokaiindo.com</p>
+        <p className="mb-8 text-center text-gray-200 text-opacity-25">To know more about how we operate and how should we go forward, ring us up on +971502194669 or mail us on info@afroharvestfoods.com</p>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="relative border-b-2 border-white border-opacity-20">
             <label htmlFor="name" className="absolute -top-4 text-sm font-medium text-white">Name</label>
