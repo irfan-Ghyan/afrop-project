@@ -47,7 +47,7 @@ const Footer = () => {
                 ))}
             </div>
 
-            <div className='flex justify-between items-start bg-[#2b5c17] p-4'>
+            <div className='flex justify-between items-start  p-4'>
                 <div className="text-gray-200 mb-4 md:mb-0 px-8">
                     <p>© 2023 AFROHARVEST FOODSTUFF LLC. All rights reserved.</p>
                     <p>Design & Developed by IG</p>
