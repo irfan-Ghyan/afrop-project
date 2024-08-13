@@ -17,7 +17,7 @@ const Card = () => {
   ];
 
   return (
-    <div className="w-full grid grid-cols-1 lg:grid-cols-5 mt-10 py-20">
+    <div className="w-full grid grid-cols-1 lg:grid-cols-5 mt-10">
       {images.map((image, index) => (
         <Link key={index} href={`/products/${image.id}`} passHref>
           <div className="relative group h-80 cursor-pointer">

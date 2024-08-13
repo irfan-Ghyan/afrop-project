@@ -81,13 +81,13 @@ const page = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  ">
           {products.map((product, index) => (
             <Link key={index} href={`/products/${product.id}`} passHref>
-              <div className="flex flex-col items-center cursor-pointer">
+              <div className="flex flex-col items-center cursor-pointer border-2 border-[#ad8c19] hover:bg-[#ad8c19] hover:border-2 hover:border-[#ad8c19] p-8">
                 <Image src={product.image} alt={product.title} width={300} height={250} className=''/>
                 <h3 className="mt-4 text-xl font-bold">{product.title}</h3>
-                <p className="mt-2 text-center text-gray-600">{product.description}</p>
+                {/* <p className="mt-2 text-center text-gray-600">{product.description}</p> */}
               </div>
             </Link>
           ))}

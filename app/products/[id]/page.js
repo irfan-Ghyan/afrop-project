@@ -17,24 +17,24 @@ export default function ProductDetail({ params }) {
   }
 
   return (
-    <div className="container mx-auto px-4 py-40 border-b-2 border-gray-200">
-        <div className='flex'>
-        <div className='w-1/2 '>
+    <div className="container mx-auto py-40 border-b-2 border-gray-200">
+        <div className='flex '>
+        <div className='w-1/2 border-2 border-[#ad8c19] hover:bg-[#ad8c19] hover:border-2 hover:border-[#ad8c19]'>
         <Image
         src={product.image}
         alt={product.title}
-        width={600}
+        width={800}
         height={400}
         objectFit="cover"
-       className=' '
+       className=' p-4'
        
       />
         </div>
         
-    <div className='w-1/2 py-10'>
-    <h1 className="text-4xl font-bold mb-4 text-[#ad8c19]">{product.title}</h1>
+    <div className='w-1/2 flex flex-col justify-center items-start px-20'>
+    <h1 className="text-4xl font-bold mb-4 text-[#ad8c19]  ">{product.title}</h1>
       
-      <p className="mt-4 text-[18px] text-gray-700 text-balance">{product.description}</p>
+      <p className="mt-4 text-[18px] text-gray-700 text-balance ">{product.description}</p>
     </div>
     </div>
     </div>
