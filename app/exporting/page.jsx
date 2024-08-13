@@ -10,7 +10,7 @@ import peanutCake from '../../public/images/img4.jpg';
 import gumArabic from '../../public/images/img5.jpg';
 import watermelonSeeds from '../../public/images/img6.jpg';
 import chickPeas from '../../public/images/img7.jpg';
-import pigeonPeas from '../../public/images/img9.jpg';
+
 
 const page = () => {
   const data = {
@@ -61,37 +61,39 @@ const page = () => {
       description: 'Sudanese chick peas is grown in the fertile soils of Sudan, our chickpeas boast a delightful taste and firm texture, making them an ideal ingredient for a myriad of dishes. Rich in protein, fiber, and essential minerals, these chickpeas not only enhance the flavor of your meals but also contribute to a balanced and wholesome diet.',
       image: chickPeas,
     },
-    {
-      id: 'pigeon-peas',
-      title: 'Pigeon Peas',
+ {
+    id: 'hibiscus',
+      title: 'Hibiscus',
       description: 'Nutritious pigeon peas, commonly used in soups, stews, and rice dishes.',
-      image: pigeonPeas,
+      image: '/images/img8.jpg',
     },
   ];
 
   return (
     <>
-      <div className='container mx-auto px-4 py-6'>
+      <div className='container mx-auto px-4 py-20 '>
         <div className="flex">
-          <div className=" flex flex-col bg-transparent mt-[60px] px-4">
+          <div className=" flex flex-col bg-transparent my-10 px-4">
             <h2 className="font-black text-6xl mb-4 text-center">{data.title}</h2>
-            <p className="text-gray-700 text-[14px] text-center font-light mb-4 text-balance py-4">{data.description}</p>
+            <p className="text-gray-700 text-[14px] font-light mb-4 text-balance text-center">{data.description}</p>
           </div>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-[60px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  ">
           {products.map((product, index) => (
-            <div key={index} className="flex flex-col items-center border-2 border-[#ad8c19] hover:bg-[#ad8c19] hover:border-2 hover:border-[#ad8c19] p-8">
-              <Image src={product.image} alt={product.name} width={300} height={250} />
-              <p className="mt-2 text-center">{product.title}</p>
-              <p className="mt-2 text-center">{product.description}</p>
-            </div>
+            <Link key={index} href={`/products/${product.id}`} passHref>
+              <div className="flex flex-col items-center cursor-pointer border-2 border-[#ad8c19] hover:bg-[#ad8c19] hover:border-2 hover:border-[#ad8c19] p-8">
+                <Image src={product.image} alt={product.title} width={300} height={250} className=''/>
+                <h3 className="mt-4 text-xl font-bold">{product.title}</h3>
+                {/* <p className="mt-2 text-center text-gray-600">{product.description}</p> */}
+              </div>
+            </Link>
           ))}
         </div>
       </div>
       <ContactForm />
     </>
-  )
+  );
 }
 
 export default page;

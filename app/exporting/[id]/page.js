@@ -1,9 +1,6 @@
 import { productDetails } from '../../../data/data';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-// import image1 from '../../../public/images/1.png';
-// import image2 from '../../../public/images/2.png';
-
 
 export async function generateStaticParams() {
   return Object.keys(productDetails).map((id) => ({
@@ -32,13 +29,14 @@ export default function ProductDetail({ params }) {
        className=' p-4'
        
       />
+     
+      
         </div>
         
     <div className='w-1/2 flex flex-col justify-center items-start px-20'>
     <h1 className="text-4xl font-bold mb-4 text-[#ad8c19]  ">{product.title}</h1>
-      
       <p className="mt-4 text-[18px] text-gray-700 text-balance ">{product.description}</p>
-      
+    
     </div>
     </div>
     </div>

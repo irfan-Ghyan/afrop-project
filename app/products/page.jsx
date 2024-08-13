@@ -6,13 +6,16 @@ import Link from 'next/link';
 import ContactForm from '../components/contactform/ContactForm';
 
 import whiteSesame from '../../public/images/img1.jpg';
-import redSesame from '../../public/images/img2.jpg';
-import peanutKernels from '../../public/images/img3.jpg';
-import peanutCake from '../../public/images/img4.jpg';
-import gumArabic from '../../public/images/img5.jpg';
-import watermelonSeeds from '../../public/images/img6.jpg';
-import chickPeas from '../../public/images/img7.jpg';
-import pigeonPeas from '../../public/images/img9.jpg';
+import redSesame from '../../public/images/img2.png';
+import peanutKernels from '../../public/images/img3.png';
+import peanutCake from '../../public/images/img4.png';
+import gumArabic from '../../public/images/img10.png';
+import watermelonSeeds from '../../public/images/img5.png';
+import chickPeas from '../../public/images/img7.png';
+import pigeonPeas from '../../public/images/img8.png';
+import hibiscus from '../../public/images/img9.png';
+
+
 
 const products = [
   {
@@ -26,6 +29,7 @@ const products = [
     title: 'Red Sesame Seeds',
     description: 'Experience the excellence quality of our red sesame seeds, celebrated for their high quality and rich oil content. Sourced meticulously, these seeds are a testament to Sudanese agricultural prowess. Known for their premium quality, they impart a distinctive flavor to dishes, elevating your culinary experience.',
     image: redSesame,
+
   },
   {
     id: 'peanut-kernels',
@@ -63,6 +67,12 @@ const products = [
     description: 'Nutritious pigeon peas, commonly used in soups, stews, and rice dishes.',
     image: pigeonPeas,
   },
+  {
+    id: 'hibiscus',
+    title: 'Hibiscus',
+    description: 'Nutritious pigeon peas, commonly used in soups, stews, and rice dishes.',
+    image: hibiscus,
+  },
 ];
 
 const page = () => {
@@ -88,6 +98,27 @@ const page = () => {
                 <Image src={product.image} alt={product.title} width={300} height={250} className=''/>
                 <h3 className="mt-4 text-xl font-bold">{product.title}</h3>
                 {/* <p className="mt-2 text-center text-gray-600">{product.description}</p> */}
+                {/* <div className='flex'>
+      <Image
+        src={product.img}
+        alt={product.title}
+        width={200}
+        height={100}
+        objectFit="img"
+       className=' p-4'
+       
+      />
+       <Image
+        src={product.img1}
+        alt={product.title}
+        width={200}
+        height={100}
+        objectFit="img"
+       className=' p-4'
+       
+      />
+      </div> */}
+      
               </div>
             </Link>
           ))}
