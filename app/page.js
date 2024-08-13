@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <div>
-    <BusinessCategory />
+    {/* <BusinessCategory /> */}
     <Aboutus {...data}/>
     <FeatureComponent />
     <div className="mt-20"><h1 className="text-center text-4xl font-black">OUR PRODUCTS</h1>

@@ -6,9 +6,10 @@ import facebook from '../../../public/images/fb.png';
 import linkedin from '../../../public/images/ld.png';
 import twitter from '../../../public/images/tw.png';
 
+
 const items = [
     {
-        logo: '/images/logo.png',
+        logo: '/images/sudan.jpg',
         title: 'Sudan Office',
         description: 'Bahri Industrial Area Khartoum - Sudan, AL-Aghareeg Neighborhood, Posrtsudan-Sudan',
         email:'info@alfabrigaafrican.com',
@@ -24,7 +25,7 @@ const items = [
         website:'www.alfabrigaafrican.com'
     },
     {
-        logo: '/images/logo.png',
+        logo: '/images/india.jpg',
         title: 'India Office',
         description: 'C-15 Bhagwati Sadan, Tonk Road, Jaipur - 302015 India',
          email:'',
@@ -40,14 +41,14 @@ const Footer = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {items.map((item, index) => (
                     <div key={index} className="p-6 ">
-                        <img src={item.logo} alt={item.title} className="w-16 h-16 mb-4" />
+                        <Image src={item.logo} alt={item.title} width={20} height={10} className="w-20 h-10 mb-4" />
                         <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                         <p className="text-gray-600">{item.description}</p>
                     </div>
                 ))}
             </div>
 
-            <div className='flex justify-between items-start  p-4'>
+            <div className='flex justify-between items-start bg-[#2b5c17] p-4'>
                 <div className="text-gray-200 mb-4 md:mb-0 px-8">
                     <p>© 2023 AFROHARVEST FOODSTUFF LLC. All rights reserved.</p>
                     <p>Design & Developed by IG</p>
