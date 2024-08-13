@@ -3,8 +3,8 @@ import React from 'react';
 
 const WhyChoosing = ({ heading, paragraph, paragraph1, paragraph2 }) => {
   return (
-    <div className='container mx-auto px-4 py-6'>
-        <div className="w-full bg-black bg-transparent p-8" style={{ backgroundImage: "url('/images/slide.jpg')"  }} >
+    <div className='container mx-auto px-4 py-8'>
+        <div className="w-full bg-black bg-transparent p-8" style={{ backgroundImage: "url('/images/slide.jpg')" }} >
           <h2 className="font-bold text-2xl lg:text-4xl text-white mb-4">{heading}</h2>
           <div className='items-center text-center flex justify-between py-10'>
           <div>
