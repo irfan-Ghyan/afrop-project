@@ -9,7 +9,7 @@ import twitter from '../../../public/images/tw.png';
 
 const items = [
     {
-        logo: '/images/sudan.jpg',
+        logo: '/images/hro.png',
         title: 'Sudan Office',
         description: 'Bahri Industrial Area Khartoum - Sudan, AL-Aghareeg Neighborhood, Posrtsudan-Sudan',
         email:'info@alfabrigaafrican.com',
@@ -25,7 +25,7 @@ const items = [
         website:'www.alfabrigaafrican.com'
     },
     {
-        logo: '/images/india.jpg',
+        logo: '/images/gr.png',
         title: 'India Office',
         description: 'C-15 Bhagwati Sadan, Tonk Road, Jaipur - 302015 India',
          email:'',
@@ -41,7 +41,7 @@ const Footer = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {items.map((item, index) => (
                     <div key={index} className="p-6 ">
-                        <Image src={item.logo} alt={item.title} width={20} height={10} className="w-20 h-10 mb-4" />
+                        <Image src={item.logo} alt={item.title} width={40} height={20} className="w-40 h-20 mb-4" />
                         <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                         <p className="text-gray-600">{item.description}</p>
                     </div>
